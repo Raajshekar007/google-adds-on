@@ -22,8 +22,8 @@ jobs:
       - name: Show files
         run: |
          pwd
-         ls -la angular-ui
-         cat angular-ui/package.json
+         ls -la angular-app
+         cat angular-app/package.json
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
