@@ -21,7 +21,8 @@ CardService.newTextButton()
 .setText("Open Angular App")
 .setOpenLink(
 CardService.newOpenLink()
-.setUrl("https://workspace-add-on-raaj.firebaseapp.com")
+// .setUrl("https://workspace-add-on-raaj.firebaseapp.com")  // firebase hosting url non google managed services
+.setUrl("https://goal-seek-1039927366714.us-west1.run.app")  // Autobuild google managed services (Clopud build,cloud run,Artifact registry)
 )
 )
 );
