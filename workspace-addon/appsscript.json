@@ -1,7 +1,19 @@
 {
-  "timeZone": "America/New_York",
-  "dependencies": {
-  },
-  "exceptionLogging": "STACKDRIVER",
-  "runtimeVersion": "V8"
+"timeZone": "Asia/Kolkata",
+"runtimeVersion": "V8",
+"exceptionLogging": "STACKDRIVER",
+"oauthScopes": [
+"https://www.googleapis.com/auth/script.container.ui",
+"https://www.googleapis.com/auth/spreadsheets.currentonly"
+],
+"addOns": {
+"common": {
+"name": "Angular Demo Addon",
+"logoUrl": "https://www.gstatic.com/images/branding/product/2x/sheets_48dp.png",
+"homepageTrigger": {
+"runFunction": "buildHomePage"
+}
+},
+"sheets": {}
+}
 }
