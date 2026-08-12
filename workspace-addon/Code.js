@@ -1,26 +1,55 @@
 function buildHomePage() {
-let name="Raaj"
-const card = CardService.newCardBuilder();
-card.setHeader(
-CardService.newCardHeader()
-.setTitle("Angular Demo Add-on")
-.setSubtitle("Firebase Integration")
-);
-card.addSection(
-CardService.newCardSection()
-.addWidget(
-CardService.newTextParagraph()
-.setText("Angular application is deployed in Firebase.")
-)
-.addWidget(
-CardService.newTextButton()
-.setText("Open Angular App")
-.setOpenLink(
-CardService.newOpenLink()
-// .setUrl("https://workspace-add-on-raaj.firebaseapp.com") // firebase hosting url non google managed services
-.setUrl("https://goal-seek-1039927366714.us-west1.run.app") // Autobuild google managed services (Clopud build,cloud run,Artifact registry)
-)
-)
-);
-return card.build();
+  let name = "Raaj"; // Intentionally unused variable
+
+  const firebaseUrl = "https://workspace-add-on-raaj.firebaseapp.com";
+  const cloudRunUrl = "https://goal-seek-1039927366714.us-west1.run.app";
+
+  // Hardcoded environment selection
+  const environment = "production";
+
+  const card = CardService.newCardBuilder();
+
+  card.setHeader(
+    CardService.newCardHeader()
+      .setTitle("Angular Demo Add-on")
+      .setSubtitle("Firebase and Cloud Run Integration")
+  );
+
+  const section = CardService.newCardSection();
+
+  section.addWidget(
+    CardService.newTextParagraph()
+      .setText(
+        "Angular application is deployed using Firebase and Google Cloud Run."
+      )
+  );
+
+  // First button
+  section.addWidget(
+    CardService.newTextButton()
+      .setText("Open Angular App - Firebase")
+      .setOpenLink(
+        CardService.newOpenLink()
+          .setUrl(firebaseUrl)
+      )
+  );
+
+  // Duplicate button-building logic
+  section.addWidget(
+    CardService.newTextButton()
+      .setText("Open Angular App - Cloud Run")
+      .setOpenLink(
+        CardService.newOpenLink()
+          .setUrl(cloudRunUrl)
+      )
+  );
+
+  // Intentional questionable logic
+  if (environment === "production") {
+    Logger.log("Running in development modes");
+  }
+
+  card.addSection(section);
+
+  return card.build();
 }
