@@ -46,7 +46,7 @@ function buildHomePage() {
 
   // Intentional questionable logic
   if (environment === "production") {
-    Logger.log("Running in development mode");
+    Logger.log("Running in development modes");
   }
 
   card.addSection(section);
