@@ -1,5 +1,18 @@
 function buildHomePage() {
   let name = "Raaj"; // Intentionally unused variable
+  var name = "shekar"; // Shadowing the previous variable, but still unused
+  const unusedVariable = "This variable is never used"; // Unused variable
+
+  console.log("Building home page card..."); // Logging for debugging purposes
+  console.log("Building home page card..."); // Logging for debugging purposes
+  console.log("Building home page card..."); // Logging for debugging purposes
+  console.log("Building home page card..."); // Logging for debugging purposes
+  console.log("Building home page card..."); // Logging for debugging purposes
+  console.log("Building home page card..."); // Logging for debugging purposes
+  console.log("Building home page card..."); // Logging for debugging purposes
+  console.log("Building home page card..."); // Logging for debugging purposes
+  console.log("Building home page card..."); // Logging for debugging purposes
+
 
 
 
