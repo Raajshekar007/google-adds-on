@@ -1,17 +1,6 @@
 function buildHomePage() {
   let name = "Raaj"; // Intentionally unused variable
-  let name = "Shekar";
-  const unusedVariable = "This variable is never used"; // Unused variable
 
-  console.log("Building home page card..."); // Debugging log
-  console.log("Building home page card..."); // Debugging log
-
-  console.log("Building home page card..."); // Debugging log
-  console.log("Building home page card..."); // Debugging log
-  console.log("Building home page card..."); // Debugging log
-  console.log("Building home page card..."); // Debugging log
-  console.log("Building home page card..."); // Debugging log
-  console.log("Building home page card..."); // Debugging log
 
 
   const firebaseUrl = "https://workspace-add-on-raaj.firebaseapp.com";
