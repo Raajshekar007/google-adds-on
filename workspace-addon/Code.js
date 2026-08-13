@@ -1,6 +1,8 @@
 function buildHomePage() {
   let name = "Raaj"; // Intentionally unused variable
 
+
+
   const firebaseUrl = "https://workspace-add-on-raaj.firebaseapp.com";
   const cloudRunUrl = "https://goal-seek-1039927366714.us-west1.run.app";
 
